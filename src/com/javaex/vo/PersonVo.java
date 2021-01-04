@@ -16,7 +16,6 @@ public class PersonVo {
 	}
 
 	public PersonVo(int personId, String name, String hp, String company) {
-		super();
 		this.personId = personId;
 		this.name = name;
 		this.hp = hp;

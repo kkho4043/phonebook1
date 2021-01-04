@@ -25,21 +25,21 @@
 		PersonVo vo = personlist.get(i); %>
 	<table border = 1>
 	
-		
-		
+	
 		<tr>
 			<td>이름</td>
-			<td><%= vo.getName()%></td>
+			<td><%=vo.getName()%></td>
+			<td><a href = "./delete.jsp?personId=<%=vo.getPersonId()%>">삭제</a></td>
 		</tr>
 		
 		<tr>
 			<td>핸드폰</td>
-			<td><%=vo.getHp()%></td>
+			<td colspan="2"><%=vo.getHp()%></td>
 		</tr>
 		
 		<tr>
 			<td>회사 번호</td>
-			<td><%=vo.getCompany()%></td>
+			<td colspan="2"><%=vo.getCompany()%></td>
 		</tr>
 		
 	</table>
